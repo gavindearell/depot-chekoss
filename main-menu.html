@@ -1,0 +1,482 @@
+<!DOCTYPE html >
+<html lang="en" >
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- swipper link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!--css link -->
+    <link rel="stylesheet" href="css/menu-css.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- alipine link -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+  </head>
+
+  <body >
+    <!-- navbar star -->
+    <header>
+      <a href="#" class="logo"
+      ><i class="fas fa-home"></i>che<span class="span">ko</span></a
+    >
+      <!-- opsition nav -->
+      <nav class="navbar" >
+        <a href="#hero" class="active">home</a> 
+        <a href="#about">about us</a>
+        <a href="#menu">our menu</a>
+        <a href="#non">our location</a>
+        <a href="#non">get help</a>
+        </nav>
+
+      <!-- icons -->
+      <div class="icons" x-data>
+        <i class="fas fa-search" id="search-icon"></i>
+        <i class="fas fa-bars" id="menu-bars"></i>
+      </div>
+    </header>
+
+    <!-- form search -->
+    <form action="" id="search-form">
+      <input type="search" placeholder="Search Here . . . ." id="search-box" />
+      <label for="search-box" class="fas fa-search"></label>
+      <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <!-- navbar end -->
+
+<!-- section -->
+<section class="hero" id="hero">
+    <main class="content">
+        <h1><span>Mari Nikmati </span>Hidangan Kami</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quia veritatis laudantium quas vitae laborum, facere impedit voluptate ex nostrum culpa, porro adipisci exercitationem et necessitatibus fugit voluptatum tempore eius!</p>
+        <a href="#" class="btn" style="font-weight: bolder;">Order Now!</a>
+    </main>
+</section>
+<!-- section end -->
+
+ 
+<!-- about section -->
+<section class="about" id="about">
+  <h2><span>About</span> Us</h2>
+  <div class="row">
+      <div class="about-img">
+      <img src="depot-img/coffee estetic.jpeg" alt="about us">
+          </div>
+      <div class="content">
+          <h3>holla!</h3>
+          <p>Welcome to a place where taste and familiarity meet in perfect harmony, at our restaurant and coffee, every dish of food and drink is a story that awakens one's taste and desire, from every mouthful of delicious food to every sip of coffee to celebrate pleasure and warmth together. Welcome to a place where taste and familiarity meet in perfect harmony</p>
+          <h3 style="margin-top: 5rem;">holla!</h3>
+          <p>Selamat datang di tempat di mana rasa dan keakraban bertemu dalam harmoni yang sempurna, di restoran dan kopi kami, setiap hidangan makanan dan minuman adalah kisah yang membangkitkan selera dan keinginan seseorang, dari setiap suap makanan lezat hingga setiap tegukan kopi untuk merayakan kesenangan dan kehangatan bersama. Selamat datang di tempat di mana rasa dan keakraban bertemu dalam harmoni yang sempurna</p>
+      </div>
+  </div>
+
+</section>
+<!-- about section end -->
+  
+
+<!-- menu section -->
+<section class="slides-menu" id="menu" style="margin-top: 13rem;">
+    <h2>our <span>menu</span></h2>
+    <div class="home" id="home" >
+      <div class="swiper mySwiper" id="home-slider" >
+        <div class="swiper-wrapper" id="wrapper" >
+          <div class="swiper-slide" id="slide" >
+            <div class="content" >
+              <span style=" font-weight: 600;">our special dish</span>
+              <h3>bubur ayam</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                officiis placeat dolores eligendi dolore soluta a qui. Modi,
+                possimus aliquam. Neque tempora mollitia voluptate, laboriosam
+                eos nulla. Incidunt, itaque voluptatum?
+              </p>
+              <span style="margin: 2rem 1rem; font-weight: bolder;">Rp.18.000 </span>
+              <a href="#" class="btn" >Order Now!</a>
+            </div>
+            <img src="depot-img/bubur.png" alt="" class="slide-img"/>
+          </div>
+        
+        
+          <div class="swiper-slide" id="slide" >
+            <div class="content" >
+              <span style=" font-weight: 600;">our special dish</span>
+              <h3>chicken katsu teriyaki</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                officiis placeat dolores eligendi dolore soluta a qui. Modi,
+                possimus aliquam. Neque tempora mollitia voluptate, laboriosam
+                eos nulla. Incidunt, itaque voluptatum?
+              </p>
+              <span style="margin: 2rem 1rem; font-weight: bolder;">Rp.21.000 </span>
+              <a href="#" class="btn" >Order Now!</a>
+            </div>
+            <img src="depot-img/chickens.jpg" alt="" class="slide-img"/>
+          </div>
+         
+         
+          <div class="swiper-slide" id="slide" >
+            <div class="content" >
+              <span style=" font-weight: 600;">our special dish</span>
+              <h3>beef teriyaki</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                officiis placeat dolores eligendi dolore soluta a qui. Modi,
+                possimus aliquam. Neque tempora mollitia voluptate, laboriosam
+                eos nulla. Incidunt, itaque voluptatum?
+              </p>
+              <span style="margin: 2rem 1rem; font-weight: bolder;">Rp.20.000 </span>
+              <a href="#" class="btn" >Order Now!</a>
+            </div>
+            <img src="depot-img/beef.jpg" alt="" class="slide-img"/>
+          </div>
+          <div class="swiper-slide" id="slide" >
+            <div class="content" >
+              <span style=" font-weight: 600;">our special dish</span>
+              <h3>spagetti</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                officiis placeat dolores eligendi dolore soluta a qui. Modi,
+                possimus aliquam. Neque tempora mollitia voluptate, laboriosam
+                eos nulla. Incidunt, itaque voluptatum?
+              </p>
+              <span style="margin: 2rem 1rem; font-weight: bolder;">Rp.25.000 </span>
+              <a href="#" class="btn" >Order Now!</a>
+            </div>
+            <img src="depot-img/112.png" alt="" class="slide-img"/>
+          </div>
+        </template>
+        </div>
+        <div class="swiper-pagination" style="margin: -1rem 0;"></div>
+      </div>
+    </div>
+</section>
+<section class="dishes" id="snack" style="margin-top: -10rem;">
+
+    <div class="box-container">
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="depot-img/aa2.jpg" alt="" />
+        <h3>nasi goreng</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span  class="span-price">Rp. 23.000</span>
+        <a href="#" class="btn">order now!</a>
+      
+    </div>
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="depot-img/aa2.jpg" alt="" />
+        <h3>beef teriyaki</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span  class="span-price">Rp. 25.000</span>
+        <a href="#" class="btn">order now!</a>
+      
+    </div>
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="depot-img/aa2.jpg" alt="" />
+        <h3>bubur manado</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span  class="span-price">Rp. 20.000</span>
+        <a href="#" class="btn">order now!</a>
+      </div>
+      
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="depot-img/aa2.jpg" alt="" />
+        <h3>spagetti</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span  class="span-price">Rp. 20.000</span>
+        <a href="#" class="btn">order now!</a>
+      </div>
+      
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="depot-img/aa2.jpg" alt="" />
+        <h3>risoles mayo</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span  class="span-price">Rp. 15.000</span>
+        <a href="#" class="btn">order now!</a>
+      </div>
+      
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="depot-img/aa2.jpg" alt="" />
+        <h3>chees pizza</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span  class="span-price">Rp. 23.000</span>
+        <a href="#" class="btn">order now!</a>
+      </div>
+      
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="depot-img/1.jpg" alt="" />
+        <h3>cappucino</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span  class="span-price">Rp. 25.000</span>
+        <a href="#" class="btn">order now!</a>
+      </div>
+      
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="depot-img/1.jpg" alt="" />
+        <h3>americano</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span  class="span-price">Rp. 25.000</span>
+        <a href="#" class="btn">order now!</a>
+      </div>
+      
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="depot-img/1.jpg" alt="" />
+        <h3>esspreso</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span  class="span-price">Rp. 20.000</span>
+        <a href="#" class="btn">order now!</a>
+      </div>
+      
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="depot-img/1.jpg" alt="" />
+        <h3>banana choco</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span  class="span-price">Rp. 20.000</span>
+        <a href="#" class="btn">order now!</a>
+      </div>
+      
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="depot-img/1.jpg" alt="" />
+        <h3>lyche tea</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span  class="span-price">Rp. 21.000</span>
+        <a href="#" class="btn">order now!</a>
+      </div>
+      
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="depot-img/1.jpg" alt="" />
+        <h3>milk shake</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div >
+        <span  class="span-price">Rp. 23.000</span>
+        <a href="#" class="btn">order now!</a>
+      </div>
+    </div>
+  </section>
+<!-- menu section end-->
+
+<!-- contact section start -->
+<section class="contact" id="contact">
+  <h2><span>our</span>location</h2>
+  <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d871.7738068055255!2d113.92287437050547!3d-2.2267385143475513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sid!2sid!4v1713010046087!5m2!1sid!2sid"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+      <div class="form" style="min-width: 25vh; margin: auto; align-items: center;" >
+          <h2 >call/our spesific location:</h2>
+         <div href="#" class="logos" style="color: greenyellow; text-decoration: none; font-size: 4rem; "><i class="fas fa-phone" style="padding: 1rem 1.5rem;"></i><span style="color: black; font-weight: bolder;"> +62 812 5589 8840 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></div>
+         <div href="#" class="logos" style="color: greenyellow; text-decoration: none; font-size: 4rem;"><i class="fas fa-envelope" style="padding: 1rem 1.5rem;"></i><span style="color: black; font-weight: bolder; "> depotcheko@gmail.com </span></div>
+         <div href="#" class="logos" style="color: greenyellow; text-decoration: none; font-size: 4rem;"><i class="fas fa-road" style="padding: 1rem 1.5rem;"></i><span style="color: black; font-weight: bolder; "> Jl. Panglima Batur &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></div>
+  </div>
+  </div>
+</section>
+<!-- contact section start end -->
+
+     <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap05.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script>
+ let searchform = document.querySelector("#search-form");
+      let menues = document.querySelector("#search-icon");
+
+      document.querySelector("#search-icon").onclick = () => {
+        searchform.classList.toggle("active");
+        menues.classList.toggle("fa-times");
+        menus.classList.remove("fa-times");
+        menu.classList.remove("fa-times");
+        navbar.classList.remove("active");
+        shoppingcart.classList.remove("active");
+      };
+      document.querySelector("#close").onclick = () => {
+        searchform.classList.remove("active");
+        menues.classList.remove("fa-times");
+      };
+
+
+
+    // menu bars
+    let navbar = document.querySelector(".navbar");
+      let menu = document.querySelector("#menu-bars");
+
+      document.querySelector("#menu-bars").onclick = () => {
+        navbar.classList.toggle("active");
+        menu.classList.toggle("fa-times");
+        menus.classList.remove("fa-times");
+        menues.classList.remove("fa-times");
+        shoppingcart.classList.remove("active");
+        searchform.classList.remove("active");
+      };
+
+      window.onscroll = () => {
+        navbar.classList.remove("active");
+        shoppingcart.classList.remove("active");
+        searchform.classList.remove("active");
+      };
+      // active link
+      let section = document.querySelectorAll("section");
+      let navlinks = document.querySelectorAll("header .navbar a");
+
+      window.onscroll = () => {
+        menu.classList.remove("fa-times");
+        navbar.classList.remove("active");
+
+        section.forEach((sec) => {
+          let top = window.scrollY ;
+          let height = sec.offsetHeight ;
+          let offset = sec.offsetTop -150;
+          let id = sec.getAttribute("id");
+
+          if (top >= offset && top < offset + height) {
+            navlinks.forEach((links) => {
+              links.classList.remove("active");
+              document
+                .querySelector("header .navbar a[href*=" + id + "]")
+                .classList.add("active");
+            });
+          }
+        });
+      };
+
+
+
+         // autospy
+         var swiper = new Swiper(".mySwiper", {
+
+spaceBetween: 30,
+centeredSlides: true,
+autoplay: {
+  delay: 2200,
+  disableOnInteraction: false,
+},
+pagination: {
+  el: ".swiper-pagination",
+  clickable: true,
+  loop: true,
+},
+});
+
+      </script>
+
+  
+  </body>
+  </html>
+
+
